@@ -1,0 +1,4 @@
+DirectoryIndex index.php
+RewriteEngine on
+# RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?isheed.com [NC]
+# RewriteRule \.css$ - [NC,F,L]

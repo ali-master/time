@@ -1,0 +1,55 @@
+table{
+	width: 100%;
+	font-size: 15px !important;
+	background: transparent !important;
+}
+
+tr:nth-child(odd){
+	height: 30px;
+	color: #FFFFFF;
+	border-radius: 1px;
+	box-shadow: 0px 0px 5px gray;
+	text-align: center;
+	background-color: #EF4537;
+}
+
+tr:nth-child(even){
+	height: 30px;
+	color: #FFF;
+	border-radius: 1px;
+	box-shadow: 0px 0px 5px gray;
+	text-align: center;
+	background-color: gray;
+}
+
+tr{
+	-webkit-transition: all 0.5s; /* Google Chrome & Safari */
+	-moz-transition: all 0.5s; /* Mozilla FireFox */
+	-ms-transition: all 0.5s; /* Microsoft Internet Explorer */
+	-o-transition: all 0.5s; /* Opera Browser */
+	transition: all 0.5s; /* All Browser */
+	transform: scale(1);
+}
+/* hover child [tr] */
+tr:nth-child(odd):hover{background-color: #FFF;color: gray;transform: scale(1.1);}
+tr:nth-child(even):hover{background-color: #FFF;color: gray;transform: scale(1.1);}
+
+td{
+	padding-right: 2.50px;
+	padding-left: 2.50px;
+}
+
+::selection{
+	color: #FFF;
+	background: gray;
+}
+
+::-webkit-selection{
+	color: #FFF;
+	background: gray;
+}
+
+::-moz-selection{
+	color: #FFF;
+	background: gray;
+}
